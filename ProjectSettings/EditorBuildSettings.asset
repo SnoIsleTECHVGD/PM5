@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Jax/Scenes/Title.unity
+    guid: 02ecb5af7b646ad4ca3f5681cdd2a20e
+  - enabled: 1
+    path: Assets/Jax/Scenes/Test.unity
+    guid: 8126cb2168a7cac4db0330cc80315224
   m_configObjects: {}
