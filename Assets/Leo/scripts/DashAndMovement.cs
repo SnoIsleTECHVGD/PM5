@@ -5,13 +5,12 @@ using UnityEngine;
 public class DashAndMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 10f;
-    private float jumpingPower = 16f;
+    private float speed = 6f;
+    private float jumpingPower = 9.75f;
     private bool isFacingRight = true;
-
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 24f;
+    private float dashingPower = 22f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
