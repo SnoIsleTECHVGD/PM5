@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jax/Scenes/Pause.unity
     guid: a15557d0bf9946c43a3c30e54433db8c
+  - enabled: 1
+    path: Assets/Jax/Scenes/Credits.unity
+    guid: 8adbff9c3be639547a9aefe6b0f1e8fc
   m_configObjects: {}
