@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "com.unity.2d.pixel-perfect": {
       "version": "4.0.1",
       "depth": 0,
@@ -19,6 +20,8 @@
       "source": "builtin",
       "dependencies": {}
     },
+=======
+>>>>>>> be69c21e484b1a345ba299f2663c7425113cfcc6
     "com.unity.collab-proxy": {
       "version": "1.17.0",
       "depth": 0,
