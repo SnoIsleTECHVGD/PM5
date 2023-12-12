@@ -8,6 +8,11 @@ public class UIButtons : MonoBehaviour
         SceneManager.LoadScene("Pause");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void Quit()
     {
         Application.Quit();
