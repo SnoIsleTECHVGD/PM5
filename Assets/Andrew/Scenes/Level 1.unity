@@ -685,6 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85435821f3fbaf64fbb3ea37ffac174b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashingPower: 8
   rb: {fileID: 621729928}
   groundCheck: {fileID: 640324093}
   groundLayer:
@@ -1000,7 +1001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 640324093}
   m_Layer: 6
-  m_Name: GroundCheck
+  m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
