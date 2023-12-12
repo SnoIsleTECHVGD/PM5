@@ -10,7 +10,7 @@ public class DashAndMovement : MonoBehaviour
     private bool isFacingRight = true;
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 22f;
+    public float dashingPower = 8f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
@@ -78,7 +78,6 @@ public class DashAndMovement : MonoBehaviour
     {
         canDash = false;
         tr.emitting = true;
-        GetComponent<Animator>().SetBool("isDashing", true);
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
@@ -87,7 +86,6 @@ public class DashAndMovement : MonoBehaviour
         yield return new WaitForSeconds(dashingTime);
 
         tr.emitting = false;
-        GetComponent<Animator>().SetBool("isDashing", false);
         rb.gravityScale = originalGravity;
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
