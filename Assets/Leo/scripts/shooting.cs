@@ -32,9 +32,9 @@ public class shooting : MonoBehaviour
         {
             x = x + 3 * Time.deltaTime * speed;
 
-        }
         transform.position = new Vector2(x, transform.position.y);
 
+        }
 
         
     }

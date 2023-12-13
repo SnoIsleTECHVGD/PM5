@@ -14,11 +14,7 @@ public class Stats : MonoBehaviour
     {
         if (health <= 0)
         {
-            if (loseText)
-            {
-              loseText.SetActive(true);
-            }
-
+   
           gameObject.SetActive(false);
         }
 
