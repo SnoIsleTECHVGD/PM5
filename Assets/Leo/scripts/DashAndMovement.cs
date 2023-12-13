@@ -6,7 +6,7 @@ public class DashAndMovement : MonoBehaviour
 {
     private float horizontal;
     private float speed = 6f;
-    private float jumpingPower = 9.75f;
+    public float jumpingPower = 9.75f;
     private bool isFacingRight = true;
     private bool canDash = true;
     private bool isDashing;
