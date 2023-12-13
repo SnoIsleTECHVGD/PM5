@@ -62,6 +62,10 @@ public class DashAndMovement : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(groundCheck.position, 0.2f);
+    }
 
     private void Flip()
     {
