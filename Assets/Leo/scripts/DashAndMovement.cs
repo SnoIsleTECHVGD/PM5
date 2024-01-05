@@ -5,11 +5,7 @@ using UnityEngine;
 public class DashAndMovement : MonoBehaviour
 {
     private float horizontal;
-<<<<<<< HEAD
-    private float speed = 8f;
-=======
     public float speed = 6f;
->>>>>>> 0c0f5db6c0cfec3e3261072cb953f789d7b863da
     public float jumpingPower = 9.75f;
     private bool isFacingRight = true;
     private bool canDash = true;
