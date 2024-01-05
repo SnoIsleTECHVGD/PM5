@@ -11,6 +11,7 @@ public class shooting : MonoBehaviour
     private bool moving = false;
     private Vector2 screenBounds;
     public object bulletPrefab;
+   
 
 
 
@@ -18,11 +19,11 @@ public class shooting : MonoBehaviour
     void Update()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = transform.right * speed;
+      
 
         x = transform.position.x;
 
-        if (Input.GetMouseButtonDown(0) == true )
+        if (Input.GetMouseButtonUp(0) == true )
         {
             GetComponent<SpriteRenderer>().enabled = true;
             moving = true;
@@ -30,7 +31,7 @@ public class shooting : MonoBehaviour
 
         if (moving)
         {
-            x = x + 3 * Time.deltaTime * speed;
+            x = x + 7 * Time.deltaTime * speed;
 
         transform.position = new Vector2(x, transform.position.y);
 

@@ -12,7 +12,7 @@ public class DamageOnHit : MonoBehaviour
     {
         Stats hitstats = collision.gameObject.GetComponent<Stats>();
 
-        if (hitstats != null)
+        if (hitstats != null && collision.CompareTag("enemy"))
         {
             hitstats.health -= damage - hitstats.defense;
 
@@ -22,21 +22,5 @@ public class DamageOnHit : MonoBehaviour
             }
         }
         
-    }
-
-    private void Update()
-    {
-        if(transform.parent.name=="PLAYER")
-        {
-            isParent = true;
-        }
-        
-        
-   
-        
-        if(isParent == true)
-        {
-            damage = 0;
-        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DashAndMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 6f;
+    private float speed = 8f;
     public float jumpingPower = 9.75f;
     private bool isFacingRight = true;
     private bool canDash = true;
@@ -69,13 +69,17 @@ public class DashAndMovement : MonoBehaviour
 
     private void Flip()
     {
+       
+
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             Vector3 localScale = transform.localScale;
             isFacingRight = !isFacingRight;
             localScale.x *= -1f;
             transform.localScale = localScale;
+           
         }
+
     }
 
     private IEnumerator Dash()
@@ -97,4 +101,5 @@ public class DashAndMovement : MonoBehaviour
 
     }
 
+ 
 }
