@@ -32,6 +32,11 @@ public class bulletSpawn : MonoBehaviour
     {
         GameObject a = Instantiate(bulletPrefab,player.position,player.rotation) as GameObject;
         canShoot = false;
+        if (transform.parent.parent.localScale.x < 0f)
+        {
+            a.GetComponent<shooting>().speed *= -1;
+        }
+
         yield return new WaitForSeconds(2);
         canShoot = true;
 
