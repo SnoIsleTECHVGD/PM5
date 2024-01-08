@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
 
-public class bulletSpawn : MonoBehaviour
+public class JaxBulletSpawn : MonoBehaviour
 {
     private Vector2 screenBounds;
     public GameObject bulletPrefab;
@@ -13,7 +13,7 @@ public class bulletSpawn : MonoBehaviour
 
     void Start()
     {
-      
+
     }
     // Update is called once per frame
     void Update()
@@ -22,15 +22,15 @@ public class bulletSpawn : MonoBehaviour
         if (Input.GetMouseButtonDown(0) == true && canShoot)
         {
             StartCoroutine(cooldown());
-            
+
         }
 
-        
+
     }
 
     private IEnumerator cooldown()
     {
-        GameObject a = Instantiate(bulletPrefab,player.position,player.rotation) as GameObject;
+        GameObject a = Instantiate(bulletPrefab, player.position, player.rotation) as GameObject;
         canShoot = false;
         if (transform.parent.parent.localScale.x < 0f)
         {
@@ -42,4 +42,6 @@ public class bulletSpawn : MonoBehaviour
         canShoot = true;
 
     }
-}    
+
+
+}

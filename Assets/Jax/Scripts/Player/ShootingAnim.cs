@@ -24,6 +24,11 @@ public class ShootingAnim : MonoBehaviour
 
         x = transform.position.x;
 
+        if (Input.GetMouseButton(1) == true)
+        {
+            GunAnim();
+        }
+        
         if (Input.GetMouseButtonUp(0) == true)
         {
             Shoot();
@@ -45,5 +50,10 @@ public class ShootingAnim : MonoBehaviour
     void Shoot()
     {
         GetComponent<Animator>().SetTrigger("Shoot");
+    }
+
+    public void GunAnim()
+    {
+        GetComponent<Animator>().SetBool("GunIsOut", true);
     }
 }
