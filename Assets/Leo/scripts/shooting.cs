@@ -31,12 +31,13 @@ public class shooting : MonoBehaviour
 
         if (moving)
         {
-            x = x + 7 * Time.deltaTime * speed;
+            x += 7 * Time.deltaTime * speed;
 
         transform.position = new Vector2(x, transform.position.y);
 
         }
 
+        
         
     }
 }
