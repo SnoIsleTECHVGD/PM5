@@ -12,6 +12,8 @@ public class shootingV2 : MonoBehaviour
     public object bulletPrefab;
 
 
+
+
     // Update is called once per frame
     void Update()
     {
@@ -34,5 +36,7 @@ public class shootingV2 : MonoBehaviour
 
         }
 
+
     }
 }
+

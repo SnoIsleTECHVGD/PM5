@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
 
-public class bulletSpawn : MonoBehaviour
+public class Gun2 : MonoBehaviour
 {
     private Vector2 screenBounds;
     public GameObject bulletPrefab;
@@ -13,7 +12,7 @@ public class bulletSpawn : MonoBehaviour
 
     void Start()
     {
-      
+
     }
     // Update is called once per frame
     void Update()
@@ -22,22 +21,23 @@ public class bulletSpawn : MonoBehaviour
         if (Input.GetMouseButton(0) == true && canShoot)
         {
             StartCoroutine(cooldown());
-            
+
         }
 
-        
+
     }
 
     private IEnumerator cooldown()
     {
-        GameObject a = Instantiate(bulletPrefab,player.position,player.rotation) as GameObject;
+        GameObject a = Instantiate(bulletPrefab, player.position, player.rotation) as GameObject;
         canShoot = false;
         if (transform.parent.parent.localScale.x < 0f)
         {
             a.GetComponent<shooting>().speed *= -1;
         }
-        yield return new WaitForSeconds(0.12f);
+        yield return 
         canShoot = true;
 
     }
-}    
+}
+

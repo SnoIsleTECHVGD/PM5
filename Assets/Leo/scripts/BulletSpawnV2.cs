@@ -7,6 +7,7 @@ public class BulletSpawnV2 : MonoBehaviour
     private Vector2 screenBounds;
     public GameObject bulletPrefab;
     public Transform player;
+    public float respawnTime = 1.0f;
     private bool canShoot = true;
 
     void Start()
@@ -29,7 +30,6 @@ public class BulletSpawnV2 : MonoBehaviour
     private IEnumerator cooldown()
     {
         GameObject a = Instantiate(bulletPrefab, player.position, player.rotation) as GameObject;
-        new WaitForSeconds(2);
         canShoot = false;
         if (transform.parent.parent.localScale.x < 0f)
         {

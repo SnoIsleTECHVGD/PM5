@@ -23,7 +23,7 @@ public class shooting : MonoBehaviour
 
         x = transform.position.x;
 
-        if (Input.GetMouseButtonUp(0) == true )
+        if (Input.GetMouseButton(0) == true )
         {
             GetComponent<SpriteRenderer>().enabled = true;
             moving = true;
@@ -37,7 +37,11 @@ public class shooting : MonoBehaviour
 
         }
 
-        
-        
+
+
     }
+    
+
+
+
 }
