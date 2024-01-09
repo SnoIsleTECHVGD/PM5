@@ -28,6 +28,7 @@ public class JaxMovement : MonoBehaviour
             return;
         }
 
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (horizontal == 0)
@@ -42,11 +43,13 @@ public class JaxMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            GetComponent<Animator>().SetInteger("PlayerInput", 2);
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            GetComponent<Animator>().SetInteger("PlayerInput", 0);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
@@ -71,6 +74,7 @@ public class JaxMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
+  
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
     private void OnDrawGizmos()
@@ -95,7 +99,7 @@ public class JaxMovement : MonoBehaviour
 
     private IEnumerator Dash()
     {
-
+        GetComponent<Animator>().SetInteger("PlayerInput", 3);
         canDash = false;
         tr.emitting = true;
         isDashing = true;

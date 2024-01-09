@@ -37,9 +37,8 @@ public class JaxBulletSpawn : MonoBehaviour
             a.GetComponent<shooting>().speed *= -1;
         }
 
-        yield return new WaitForSeconds(.75f);
-        yield return new WaitForSeconds(0.75f);
-        canShoot = true;
+        yield return new WaitForSeconds(.25f);
+       yield return canShoot = true;
 
     }
 
