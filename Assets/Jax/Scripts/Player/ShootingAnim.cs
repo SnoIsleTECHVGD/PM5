@@ -23,8 +23,8 @@ public class ShootingAnim : MonoBehaviour
 
 
         x = transform.position.x;
-
-        if (Input.GetMouseButtonUp(0) == true)
+        
+        if (Input.GetMouseButtonDown(0) == true)
         {
             Shoot();
             GetComponent<SpriteRenderer>().enabled = true;
