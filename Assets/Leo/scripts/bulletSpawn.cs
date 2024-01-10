@@ -36,13 +36,8 @@ public class bulletSpawn : MonoBehaviour
         {
             a.GetComponent<shooting>().speed *= -1;
         }
-<<<<<<< HEAD
         yield return new WaitForSeconds(0.12f);
-=======
 
-        yield return new WaitForSeconds(.75f);
-        yield return new WaitForSeconds(0.75f);
->>>>>>> 239c0777b3b09747301b9af7778c457bf9c9e96d
         canShoot = true;
 
     }

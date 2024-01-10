@@ -18,7 +18,7 @@ public class BulletSpawnV2 : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButton(0) == true && canShoot)
+        if (Input.GetMouseButtonDown(0) == true && canShoot)
         {
             StartCoroutine(cooldown());
 
