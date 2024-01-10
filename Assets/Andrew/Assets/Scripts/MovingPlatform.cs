@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    public float speed;         // speed of the platform
-    public int startingPoint;   //starting index (position of the platform)
-    public Transform[] points;  // An array of the transform points (positions where the platform needs to move)
+    public float speed;         
+    public int startingPoint;   
+    public Transform[] points;  
 
-    private int i;  //index of the array
-    // Start is called before the first frame update
+    private int i;  
     void Start()
     {
 
-        transform.position = points[startingPoint].position;    // Setting the position of the platform to 
-                                                                // the position of one of the points using index "startingPoint"
+        transform.position = points[startingPoint].position;
 
 
     }
@@ -25,16 +23,16 @@ public class MovingPlatform : MonoBehaviour
         
         if (Vector2.Distance(transform.position, points[i].position) < 0.02f)
         {
-            i++; // increase the index
-            if (i == points.Length) // check if the platform was on th elast point after the index increase
+            i++;
+            if (i == points.Length)
             {
-                i = 0;  //reset the index
+                i = 0;
             }
 
 
         }
         
-        // moving the platform to the point position with the index "i"
+       
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
     
     }
