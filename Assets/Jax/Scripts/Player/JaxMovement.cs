@@ -43,7 +43,6 @@ public class JaxMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            GetComponent<Animator>().SetInteger("PlayerInput", 2);
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -74,7 +73,7 @@ public class JaxMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-  
+        GetComponent<Animator>().SetTrigger("Jump");
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
     private void OnDrawGizmos()

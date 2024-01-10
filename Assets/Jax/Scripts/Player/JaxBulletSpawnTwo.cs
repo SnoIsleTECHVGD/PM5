@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
 
-public class JaxBulletSpawn : MonoBehaviour
+public class JaxBulletSpawnTwo : MonoBehaviour
 {
-    public Animator playerAnim;
     private Vector2 screenBounds;
     public GameObject bulletPrefab;
     public Transform player;
@@ -37,10 +35,8 @@ public class JaxBulletSpawn : MonoBehaviour
         {
             a.GetComponent<shooting>().speed *= -1;
         }
-
-        yield return new WaitForSeconds(.75f);
         yield return canShoot = true;
+
     }
-
-
 }
+
