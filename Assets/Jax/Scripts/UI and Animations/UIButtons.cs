@@ -5,7 +5,7 @@ public class UIButtons : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Pause");
+        SceneManager.LoadScene("Main Game");
     }
 
     public void Credits()

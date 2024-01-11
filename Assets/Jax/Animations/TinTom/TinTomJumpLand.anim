@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TinTomJump
+  m_Name: TinTomJumpLand
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -5282992902765959667, guid: d4a77a5b6f9ffd04895e5895057e5699, type: 3}
+      value: {fileID: 3854501533084258871, guid: 81709d27a0d54c74ba131f34df52eeb2, type: 3}
     - time: 0.083333336
-      value: {fileID: -3964689843416659666, guid: d4a77a5b6f9ffd04895e5895057e5699, type: 3}
-    - time: 0.41666666
-      value: {fileID: -1807077866358692472, guid: d4a77a5b6f9ffd04895e5895057e5699, type: 3}
+      value: {fileID: -4293816544583519110, guid: 81709d27a0d54c74ba131f34df52eeb2, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -5282992902765959667, guid: d4a77a5b6f9ffd04895e5895057e5699, type: 3}
-    - {fileID: -3964689843416659666, guid: d4a77a5b6f9ffd04895e5895057e5699, type: 3}
-    - {fileID: -1807077866358692472, guid: d4a77a5b6f9ffd04895e5895057e5699, type: 3}
+    - {fileID: 3854501533084258871, guid: 81709d27a0d54c74ba131f34df52eeb2, type: 3}
+    - {fileID: -4293816544583519110, guid: 81709d27a0d54c74ba131f34df52eeb2, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5
+    m_StopTime: 0.16666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
