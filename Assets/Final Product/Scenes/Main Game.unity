@@ -177,7 +177,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.49981
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -219,9 +219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89b606e9a1bc64478b335f3fdaebd24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   target: {fileID: 2523587217089571561}
-  offset: {x: 0, y: 0, z: -1}
+  offset: {x: 0, y: 0.3, z: -1}
 --- !u!1 &450810891
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -11721,10 +11721,10 @@ Transform:
   m_GameObject: {fileID: 2117411723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 283, y: -5.537, z: 0}
-  m_LocalScale: {x: 707.0339, y: 1.3817, z: 1}
+  m_LocalScale: {x: 707.0339, y: 2.262534, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &289654613820809072
 Transform:
@@ -11738,7 +11738,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &289654613820809079
 GameObject:
@@ -12249,7 +12249,7 @@ RectTransform:
   m_Children:
   - {fileID: 734044043603092213}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12311,7 +12311,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &734044043736816428
 GameObject:
@@ -12327,7 +12327,7 @@ GameObject:
   - component: {fileID: 734044043736816429}
   - component: {fileID: 734044043736816425}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Pause Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13254,6 +13254,7 @@ GameObject:
   - component: {fileID: 2523587217089571554}
   - component: {fileID: 2523587217089571555}
   - component: {fileID: 2523587217089571536}
+  - component: {fileID: 2523587217089571568}
   m_Layer: 0
   m_Name: TinTom
   m_TagString: Player
@@ -13293,7 +13294,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0029797703, y: 0.01280459}
+  m_Offset: {x: -0.00014278293, y: 0.009682015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13304,7 +13305,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37777874, y: 0.5190376}
+  m_Size: {x: 0.19250584, y: 0.51279247}
   m_EdgeRadius: 0
 --- !u!114 &2523587217089571565
 MonoBehaviour:
@@ -13364,6 +13365,32 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   tr: {fileID: 2523587217089571554}
+--- !u!61 &2523587217089571568
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523587217089571562}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.005522974, y: 0.049707256}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.36826694, y: 0.2003669}
+  m_EdgeRadius: 0
 --- !u!4 &2523587218600944490
 Transform:
   m_ObjectHideFlags: 0
@@ -13652,11 +13679,11 @@ Transform:
   m_LocalPosition: {x: 9.4752655, y: 3.0979347, z: -397.37537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5905824834655521385}
   - {fileID: 5905824835523134095}
+  - {fileID: 5905824834655521385}
   - {fileID: 450810892}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5905824834506188818
 Transform:
@@ -14034,7 +14061,7 @@ Transform:
   m_Children:
   - {fileID: 5905824835181011790}
   m_Father: {fileID: 5905824834494394723}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &5905824834655521430
 Grid:
@@ -14504,7 +14531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5905824834716780156}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 106.47382, y: 8.484442, z: 397.37537}
+  m_LocalPosition: {x: 106.47382, y: 8.404442, z: 397.37537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5905824836289321082}
@@ -26745,7 +26772,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -27939,7 +27966,7 @@ Transform:
   - {fileID: 5905824834716780159}
   - {fileID: 5905824836289805330}
   m_Father: {fileID: 5905824834494394723}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5905824835525881616
 Transform:
@@ -29883,7 +29910,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5905824836499645417}
   m_LocalRotation: {x: -0, y: -0, z: 0.19936788, w: 0.97992474}
-  m_LocalPosition: {x: -1.5523, y: 0.46, z: 0}
+  m_LocalPosition: {x: -1.523, y: 0.46, z: 0}
   m_LocalScale: {x: 5.9651523, y: 0.5338761, z: 1}
   m_Children: []
   m_Father: {fileID: 5905824835691352285}
@@ -30263,7 +30290,7 @@ GameObject:
   - component: {fileID: 6407387835508147705}
   - component: {fileID: 6407387835508147706}
   m_Layer: 5
-  m_Name: Canvas 1
+  m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30282,7 +30309,7 @@ RectTransform:
   m_Children:
   - {fileID: 6407387834030495784}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -30647,7 +30674,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6652533130509086616
 GameObject:
