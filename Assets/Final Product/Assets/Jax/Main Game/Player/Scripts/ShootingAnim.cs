@@ -33,6 +33,7 @@ public class ShootingAnim : MonoBehaviour
 
         if (moving)
         {
+            new WaitForSeconds(0.4f);
             x = x + 7 * Time.deltaTime * speed;
 
             transform.position = new Vector2(x, transform.position.y);
