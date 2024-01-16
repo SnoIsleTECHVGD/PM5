@@ -5,7 +5,7 @@ public class UIButtons : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Main Game");
+        SceneManager.LoadScene("Story Cutscene");
     }
 
     public void Credits()

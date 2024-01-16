@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Final Product/Scenes/Title Screen.unity
     guid: 9a93ca42ea284814ca3bba9c2d138875
   - enabled: 1
+    path: Assets/Final Product/Scenes/Story Cutscene.unity
+    guid: 610be13e808204147819ce66933ced89
+  - enabled: 1
     path: Assets/Final Product/Scenes/Main Game 2.unity
     guid: 6473d93769e6adb4180cb403ecf69edf
   - enabled: 1
