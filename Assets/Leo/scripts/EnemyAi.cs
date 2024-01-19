@@ -11,7 +11,7 @@ public class EnemyAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+      
     }
 
     // Update is called once per frame
@@ -28,8 +28,17 @@ public class EnemyAi : MonoBehaviour
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
 
         }
+      
 
+     
+       
 
+        if (player.GetComponent<Rigidbody2D>().velocity.x < 1)
+        {
+            transform.Rotate(0f, -180f, 0f);
+        }
     }
 
+
+   
 }
