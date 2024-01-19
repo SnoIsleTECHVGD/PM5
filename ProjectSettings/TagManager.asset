@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Enemy
   - enemy
+  - WIN
   layers:
   - Default
   - TransparentFX

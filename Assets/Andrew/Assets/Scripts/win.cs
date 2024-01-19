@@ -14,6 +14,8 @@ public class win : MonoBehaviour
         if(collision.transform.tag == "WIN")
         {
             WINTEXT.gameObject.SetActive(true);
+            Time.timeScale = 0;
+
         }
 
 
