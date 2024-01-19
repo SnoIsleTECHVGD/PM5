@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shooting : MonoBehaviour
+public class ShootingAnim : MonoBehaviour
 {
 
     private float x;
     public Rigidbody2D rb;
+    public Animator player;
     public float speed;
     private bool moving = false;
     private Vector2 screenBounds;
     public object bulletPrefab;
-   
+
 
 
 
@@ -19,35 +20,31 @@ public class shooting : MonoBehaviour
     void Update()
     {
         rb = GetComponent<Rigidbody2D>();
-      
+
 
         x = transform.position.x;
-
-        if (Input.GetMouseButton(0) == true )
+        
+        if (Input.GetMouseButtonUp(0) == true)
         {
+            Shoot();
             GetComponent<SpriteRenderer>().enabled = true;
             moving = true;
         }
 
         if (moving)
         {
+            new WaitForSeconds(0.4f);
+            x = x + 7 * Time.deltaTime * speed;
 
-            x += 7 * Time.deltaTime * speed;
-
-         transform.position = new Vector2(x, transform.position.y);
-            Destroy(this.gameObject, 3f);
+            transform.position = new Vector2(x, transform.position.y);
 
         }
 
 
-
-        
-
-
-
     }
 
-   
-
-
+    void Shoot()
+    {
+        GetComponent<Animator>().SetTrigger("Shoot");
+    }
 }

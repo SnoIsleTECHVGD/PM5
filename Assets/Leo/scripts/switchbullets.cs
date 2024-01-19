@@ -20,9 +20,7 @@ public class switchbullets : MonoBehaviour
             Toggle[0].gameObject.SetActive(true);
             Toggle[1].enabled = false;
             Toggle[1].gameObject.SetActive(false);
-            Toggle[2].enabled = false;
-            Toggle[2].gameObject.SetActive(false);
-
+         
         }
 
         if (Input.GetKeyDown(num2.ToString()))
@@ -32,8 +30,7 @@ public class switchbullets : MonoBehaviour
             Toggle[0].gameObject.SetActive(false);
             Toggle[1].enabled = true;
             Toggle[1].gameObject.SetActive(true);
-            Toggle[2].enabled = false;
-            Toggle[2].gameObject.SetActive(false);
+           
         }
 
         if (Input.GetKeyDown(num3.ToString()))
