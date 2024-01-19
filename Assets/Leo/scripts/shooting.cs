@@ -31,6 +31,7 @@ public class shooting : MonoBehaviour
 
         if (moving)
         {
+
             x += 7 * Time.deltaTime * speed;
 
          transform.position = new Vector2(x, transform.position.y);

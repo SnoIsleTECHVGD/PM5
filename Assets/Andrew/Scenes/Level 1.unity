@@ -2137,6 +2137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chechpointSound: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &621729935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2166,6 +2167,8 @@ MonoBehaviour:
   defense: 0
   attack: 0
   loseText: {fileID: 0}
+=======
+>>>>>>> 79501f61be436bac0679a0a183769f66c72e32a9
 --- !u!1 &632522583
 GameObject:
   m_ObjectHideFlags: 0
