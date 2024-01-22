@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    
+
     [Header("Health")]
     [SerializeField] public float startingHealth;
     public float currentHealth {  get; private set; }
     private Animator anim;
     private bool dead;
+    [Header("Components")]
+    [SerializeField] private Behaviour[] components;
+    private bool invulerable;
 
     public float health;
     public float defense;
@@ -28,6 +33,10 @@ public class Health : MonoBehaviour
         AddHealth(startingHealth);
         anim.Play("TinTomIdle2");
         
+        foreach(Behaviour component in components)
+            component.enabled = true;
+
+         
    }
 
     public void AddHealth(float _value)
