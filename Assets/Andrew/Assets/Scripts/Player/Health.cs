@@ -27,6 +27,7 @@ public class Health : MonoBehaviour
         dead = false;
         AddHealth(startingHealth);
         anim.Play("TinTomIdle2");
+        
    }
 
     public void AddHealth(float _value)
