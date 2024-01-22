@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Final Product/Scenes/Story Cutscene.unity
     guid: 610be13e808204147819ce66933ced89
   - enabled: 1
-    path: Assets/Final Product/Scenes/Main Game 2.unity
-    guid: 6473d93769e6adb4180cb403ecf69edf
+    path: Assets/Final Product/Scenes/b.unity
+    guid: dff36cd72d283b24e9d8a329ba814be1
   - enabled: 1
     path: Assets/Final Product/Scenes/Credits.unity
     guid: 8bf4ab43365addf44ba2e1c160753aae
