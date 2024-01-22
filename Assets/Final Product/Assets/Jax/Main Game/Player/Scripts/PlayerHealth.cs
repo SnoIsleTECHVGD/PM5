@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public HealthBar healthBar;
     public float maxHealth = 100f;
     public float currentHealth;
+    public SpriteRenderer player;
     void Start()
     {
         currentHealth = maxHealth;
@@ -22,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        StartCoroutine(FlashRed());
 
         if (currentHealth <= 0)
         {
@@ -34,5 +36,12 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
 
         this.enabled = false;
+    }
+
+    public IEnumerator FlashRed()
+    {
+        player.color = Color.red;
+        yield return new WaitForSeconds(0.3f);
+        player.color = Color.white;
     }
 }
