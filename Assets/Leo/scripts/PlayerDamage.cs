@@ -8,16 +8,11 @@ public class PlayerDamage : MonoBehaviour
      public float damage;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Stats hitstats = collision.gameObject.GetComponent<Stats>();
+        CactiStats hitstats = collision.gameObject.GetComponent<CactiStats>();
 
         if (hitstats != null && collision.CompareTag("enemy"))
         {
             hitstats.health -= damage - hitstats.defense;
-
-            if (hitstats.health <= 0)
-            {
-                Destroy(hitstats.gameObject);
-            }
         }
     }
 }
