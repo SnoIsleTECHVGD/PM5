@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CactiStats : MonoBehaviour
+public class CactiStats :Stats
 {
 
-    public float health;
-    public float defense;
-    public float attack;
+ 
 
     public GameObject loseText;
 

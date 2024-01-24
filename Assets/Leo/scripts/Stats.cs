@@ -8,19 +8,5 @@ public class Stats : MonoBehaviour
     public float defense;
     public float attack;
 
-    public GameObject loseText;
 
-    private void Update()
-    {
-        if (health <= 0)
-        {
-
-
-   
-          gameObject.SetActive(false);
-        }
-
-
-
-    }
 }
