@@ -1167,9 +1167,9 @@ GameObject:
   - component: {fileID: 2130889085}
   - component: {fileID: 2130889084}
   - component: {fileID: 2130889088}
-  - component: {fileID: 2130889082}
-  - component: {fileID: 2130889081}
   - component: {fileID: 2130889083}
+  - component: {fileID: 2130889081}
+  - component: {fileID: 2130889082}
   m_Layer: 0
   m_Name: CACTUS(walking)
   m_TagString: enemy
@@ -1186,13 +1186,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130889080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a76664ea8131dfc4fab906f24ca10271, type: 3}
+  m_Script: {fileID: 11500000, guid: ee25a4f6a8869984c878be0505c04575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
-  defense: 0
-  attack: 0
-  loseText: {fileID: 0}
+  targert: {fileID: 1041670221}
+  speed: 2
+  followDistance: 3
 --- !u!114 &2130889082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,13 +1201,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130889080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e627753bf7d26d4eb3bee66efa2e76d, type: 3}
+  m_Script: {fileID: 11500000, guid: a76664ea8131dfc4fab906f24ca10271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1041670221}
-  followDistance: 2
-  minFollowDistance: 1
-  speed: 1.5
+  health: 30
+  defense: 0
+  attack: 0
+  loseText: {fileID: 0}
 --- !u!114 &2130889083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,11 +1464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5255948021956300862, guid: 62b7749dcd569d940a1cc4c7cb3e1ade, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.33
+      value: 24.31
       objectReference: {fileID: 0}
     - target: {fileID: 5255948021956300862, guid: 62b7749dcd569d940a1cc4c7cb3e1ade, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.72
       objectReference: {fileID: 0}
     - target: {fileID: 5255948021956300862, guid: 62b7749dcd569d940a1cc4c7cb3e1ade, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1609,7 +1608,7 @@ PrefabInstance:
       objectReference: {fileID: 1041670221}
     - target: {fileID: 6430743642339985070, guid: 2edfde8312e0bdb468e818de39dd0150, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6430743642339985056, guid: 2edfde8312e0bdb468e818de39dd0150, type: 3}
