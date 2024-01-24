@@ -22,13 +22,14 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (collision.CompareTag("enemy"))
         {
             TakeDamage(10);
         }
     }
+
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;

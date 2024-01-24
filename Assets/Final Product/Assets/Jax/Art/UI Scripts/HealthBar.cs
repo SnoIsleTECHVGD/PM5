@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
 
-    public PlayerHealth playerHealth;
+    public Stats playerHealth;
     public Slider healthSlider;
     public Slider easeHealthSlider;
 
@@ -14,14 +14,14 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
-        if (healthSlider.value != playerHealth.currentHealth)
+        if (healthSlider.value != playerHealth.health)
         {
-            healthSlider.value = playerHealth.currentHealth;
+            healthSlider.value = playerHealth.health;
         }
 
         if(healthSlider.value != easeHealthSlider.value)
         {
-            easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, playerHealth.currentHealth, lerpSpeed);
+            easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, playerHealth.health, lerpSpeed);
         }
     }
 }
