@@ -35,7 +35,7 @@ public class shooting : MonoBehaviour
             x += 7 * Time.deltaTime * speed;
 
          transform.position = new Vector2(x, transform.position.y);
-            Destroy(this.gameObject, 3f);
+            Destroy(this.gameObject, 1.5f);
 
         }
 
